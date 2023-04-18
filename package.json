@@ -1,0 +1,44 @@
+{
+  "name": "georss",
+  "version": "0.0.0",
+  "description": "Read and Write GeoRSS. Isomorphic.",
+  "type": "module",
+  "files": [],
+  "scripts": {
+    "format": "npx prettier --arrow-parens=avoid --print-width=160 --trailing-comma=none --write *.js */*.js */**/*.js",
+    "test:atom": "node ./src/atom/test.js",
+    "test:gml": "node ./src/gml/test.js",
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielJDufour/georss.git"
+  },
+  "keywords": [
+    "geo",
+    "geojson",
+    "georss",
+    "geospatial",
+    "gis",
+    "ogc",
+    "map",
+    "rss"
+  ],
+  "author": "Daniel J. Dufour",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/DanielJDufour/georss/issues"
+  },
+  "homepage": "https://github.com/DanielJDufour/georss#readme",
+  "dependencies": {
+    "atom-syndication-format": "^0.1.0",
+    "bbox-fns": "^0.6.0",
+    "geography-markup-language": "^0.0.1",
+    "really-simple-syndication": "^0.0.1",
+    "reproject-geojson": "^0.3.0",
+    "xml-utils": "^1.7.0"
+  },
+  "devDependencies": {
+    "flug": "^2.6.0"
+  }
+}

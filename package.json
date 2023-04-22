@@ -1,6 +1,6 @@
 {
   "name": "georss",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Read GeoRSS. Isomorphic.",
   "type": "module",
   "files": [

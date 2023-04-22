@@ -13,15 +13,15 @@ import { read } from "georss";
 // "GeoRSS Simple example using Atom" from https://en.wikipedia.org/wiki/GeoRSS
 read(`<?xml version="2.0" encoding="utf-8"?> <feed xmlns="http://www.w3.org/2005/Atom" xmlns:georss="http://www.georss.org/georss"> <title>Earthquakes</title> <subtitle>International earthquake observation labs</subtitle> <link href="http://example.org/"/> <updated>2005-12-13T18:30:02Z</updated> <author> <name>Dr. Thaddeus Remor</name> <email>tremor@quakelab.edu</email> </author> <id>urn:uuid:60a76c80-d399-11d9-b93C-0003939e0af6</id> <entry> <title>M 3.2, Mona Passage</title> <link href="http://example.org/2005/09/09/atom01"/> <id>urn:uuid:1225c695-cfb8-4ebb-aaaa-80da344efa6a</id> <updated>2005-08-17T07:02:32Z</updated> <summary>We just had a big one.</summary> <georss:point>45.256 -71.92</georss:point> </entry> </feed>`);
 {
-  type: 'Feature',
-  properties: {
-    'atom:id': 'urn:uuid:1225c695-cfb8-4ebb-aaaa-80da344efa6a',
-    'atom:title': 'M 3.2, Mona Passage',
-    'atom:updated': 2005-08-17T07:02:32.000Z,
-    'atom:summary': { summary: 'We just had a big one.' },
-    'atom:links': [ { href: 'http://example.org/2005/09/09/atom01' } ]
+  "type": "Feature",
+  "properties": {
+    "atom:id": "urn:uuid:1225c695-cfb8-4ebb-aaaa-80da344efa6a",
+    "atom:title": "M 3.2, Mona Passage",
+    "atom:updated": 2005-08-17T07:02:32.000Z, // date object
+    "atom:summary": { summary: "We just had a big one." },
+    "atom:links": [ { href: "http://example.org/2005/09/09/atom01" } ]
   },
-  geometry: { type: 'Point', coordinates: [ -71.92, 45.256 ] }
+  "geometry": { type: "Point", coordinates: [ -71.92, 45.256 ] }
 }
 
 // "GeoRSS GML encoding for RSS 2.0" from https://en.wikipedia.org/wiki/GeoRSS

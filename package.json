@@ -1,14 +1,22 @@
 {
   "name": "georss",
   "version": "0.0.1",
-  "description": "Read and Write GeoRSS. Isomorphic.",
+  "description": "Read GeoRSS. Isomorphic.",
   "type": "module",
-  "files": [],
+  "files": [
+    "src"
+  ],
   "scripts": {
     "format": "npx prettier --arrow-parens=avoid --print-width=160 --trailing-comma=none --write *.js */*.js */**/*.js",
+    "test": "npm run test:atom && npm run test:gml && npm run test:rss && npm run test:simple && npm run test:utils && npm run test:w3c && npm run test:where && npm run test:main",
     "test:atom": "node ./src/atom/test.js",
     "test:gml": "node ./src/gml/test.js",
-    "test": "node test.js"
+    "test:rss": "node ./src/rss/test.js",
+    "test:simple": "node ./src/simple/test.js",
+    "test:utils": "node ./src/utils/test.js",
+    "test:w3c": "node ./src/w3c/test.js",
+    "test:where": "node ./src/where/test.js",
+    "test:main": "node test.js"
   },
   "repository": {
     "type": "git",
@@ -36,6 +44,7 @@
     "geography-markup-language": "^0.0.1",
     "really-simple-syndication": "^0.0.1",
     "reproject-geojson": "^0.3.0",
+    "xml-fns": "^0.0.1",
     "xml-utils": "^1.7.0"
   },
   "devDependencies": {
